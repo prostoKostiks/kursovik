@@ -1,0 +1,294 @@
+/* === Глобальные стили === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f5ff 0%, #e6e6fa 50%, #f0e6f6 100%);
+    background-attachment: fixed;
+}
+
+/* === Изображения === */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border: 3px double #8b668b;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(139, 102, 139, 0.3);
+}
+
+/* === Навигация === */
+nav {
+    background: linear-gradient(135deg, #e6e6fa, #d8cfe6);
+    border-radius: 25px;
+    width: fit-content;
+    margin: 15px auto;
+    border: 2px solid #b19cd9;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 12px 25px;
+    color: #6a5acd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #d8bfd8, #c9aed6);
+    color: #4b0082;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(107, 66, 131, 0.3);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, #b19cd9, #9f86c5);
+    color: white;
+}
+
+/* === Шапка сайта === */
+header {
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+    box-shadow: 0 6px 25px rgba(139, 102, 139, 0.15);
+    border-radius: 15px;
+    margin: 15px;
+    border: 1px solid #e6e6fa;
+    overflow: hidden;
+}
+
+.header-top {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8, #b9a2e0);
+    color: #5d4a9e;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* === Карточки услуг === */
+.services {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #f8f5ff, #ffffff);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #8b668b;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    text-decoration: underline;
+    text-decoration-color: #d8bfd8;
+    text-underline-offset: 8px;
+    text-shadow: 2px 2px 4px rgba(139, 102, 139, 0.1);
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 340px;
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 25px rgba(139, 102, 139, 0.15);
+    border: 2px solid #e6e6fa;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 12px 12px 35px rgba(139, 102, 139, 0.25);
+    border-color: #b19cd9;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+    color: #6a5acd;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-body {
+    padding: 25px;
+    background: white;
+}
+.card-body a
+{
+    padding: 10px;
+    color: #8b668b;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b668b;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+/* Таблица цен в карточках */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.card td {
+    padding: 6px 8px;
+    vertical-align: top;
+}
+
+.card td:first-child {
+    text-align: left;
+    width: 70%;
+}
+
+.card td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* === Контакты и подвал === */
+.contact {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #e6e6fa, #f8f5ff);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 25px rgba(139, 102, 139, 0.15);
+    margin-bottom: 30px;
+    border: 2px solid #e6e6fa;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8, #b9a2e0);
+    color: #5d4a9e;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15px;
+    font-weight: 600;
+    border: 1px solid #d8bfd8;
+}
+
+/* === Анимации === */
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(20px, 20px); }
+}
+
+/* === Герой-блок (верх страницы) === */
+.hero {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8, #e9dff5);
+    color: #4b0082;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 25px auto;
+    border: 2px dashed #b19cd9;
+    position: relative;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+/* Нежная анимация перелива */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: float 25s infinite linear;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #6a5acd;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    text-shadow: 2px 2px 4px rgba(106, 90, 205, 0.2);
+    position: relative;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #5d4a9e;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* Кнопка в герое */
+.hero .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #b19cd9, #9f86c5);
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid #8b668b;
+    box-shadow: 0 4px 15px rgba(139, 102, 139, 0.3);
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .btn:hover {
+    background: linear-gradient(135deg, #9f86c5, #8b668b);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(139, 102, 139, 0.4);
+}
+
+.hero .btn:active {
+    transform: translateY(-1px);
+}
+
