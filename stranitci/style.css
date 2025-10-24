@@ -480,16 +480,15 @@ footer {
 
 
 
-
-/* ====== Общий контейнер ====== */
-.services {
+.gallery {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
   padding: 2rem;
-  flex-wrap: wrap; /* для мобильных */
-}
+  flex-wrap: wrap; 
+} 
+
 
 /* ====== Слайдшоу ====== */
 .slideshow {
@@ -581,19 +580,6 @@ footer {
   color: #333;
 }
 
-.more {
-  background: #333;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.more:hover {
-  background: #555;
-}
 
 /* ====== Адаптив под мобилки ====== */
 @media (max-width: 768px) {
@@ -611,4 +597,304 @@ footer {
     width: 80vw;
     height: 50vw;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-new {
+  background: linear-gradient(135deg, #f6f3ff 0%, #ebe6fa 100%);
+  border-radius: 25px;
+  margin: 60px auto;
+  padding: 50px 40px;
+  box-shadow: 0 10px 25px rgba(100, 80, 160, 0.1);
+  max-width: 1100px;
+}
+
+.services-new .intro {
+  text-align: center;
+  color: #4a3c80;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.services-new .service-list {
+  list-style-type: disc;
+  padding-left: 40px;
+  color: #4a3c80;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.services-new .service-block {
+  background: rgba(255, 255, 255, 0.65);
+  border-left: 6px solid #b29ad9;
+  border-radius: 18px;
+  padding: 25px 30px;
+  margin-top: 25px;
+  box-shadow: 0 5px 15px rgba(130, 110, 190, 0.08);
+  transition: 0.3s;
+}
+
+.services-new .service-block:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.services-new h3 {
+  color: #6b52ae;
+  margin-bottom: 10px;
+}
+
+.services-new p,
+.services-new ul {
+  color: #4b0082;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.services-new ul {
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Секция преимуществ */
+.advantages {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #e6e6fa, #f8f5ff);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-item {
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(139, 102, 139, 0.1);
+    border: 2px solid #e6e6fa;
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 25px rgba(139, 102, 139, 0.2);
+    border-color: #b19cd9;
+}
+
+.advantage-item h3 {
+    color: #6a5acd;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.advantage-item p {
+    color: #5d4a9e;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Секция о сервисе */
+.about-service {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #f8f5ff, #ffffff);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #5d4a9e;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.about-content h3 {
+    color: #8b668b;
+    margin: 30px 0 20px 0;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #e6e6fa;
+    position: relative;
+    padding-left: 30px;
+}
+
+.service-list li:before {
+    content: '✓';
+    color: #b19cd9;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantage-item {
+        padding: 20px;
+    }
+    
+    .about-content {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Стили для таблицы с ценами на кремацию */
+.price-table-container {
+    background: linear-gradient(135deg, #ffffff, #f8f5ff);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 8px 8px 25px rgba(139, 102, 139, 0.15);
+    border: 2px solid #e6e6fa;
+    overflow-x: auto;
+}
+
+.detailed-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 600px;
+}
+
+.detailed-price-table th {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+    color: #6a5acd;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+}
+
+.detailed-price-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e6e6fa;
+    vertical-align: top;
+}
+
+.detailed-price-table tr:last-child td {
+    border-bottom: none;
+}
+
+.detailed-price-table td:first-child {
+    width: 40px;
+    text-align: center;
+    color: #8b668b;
+    font-weight: 600;
+}
+
+.detailed-price-table td:nth-child(2) {
+    width: 60%;
+    color: #5d4a9e;
+}
+
+.detailed-price-table td:last-child {
+    width: 30%;
+    text-align: right;
+    color: #8b668b;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.category-header {
+    background: linear-gradient(135deg, #f0e6ff, #e6e6fa);
+}
+
+.category-header td {
+    padding: 15px;
+    font-weight: 600;
+    color: #6a5acd;
+    border-bottom: 2px solid #d8bfd8;
+}
+
+.service-description {
+    color: #5d4a9e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.note {
+    color: #8b668b;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f8f5ff;
+    border-radius: 8px;
+    border-left: 3px solid #b19cd9;
+}
+
+/* Адаптивность для таблиц */
+@media (max-width: 768px) {
+    .price-table-container {
+        padding: 15px;
+        margin: 0 -15px;
+        border-radius: 0;
+    }
+    
+    .detailed-price-table {
+        font-size: 14px;
+    }
+    
+    .detailed-price-table td {
+        padding: 8px 10px;
+    }
 }
